@@ -6,6 +6,9 @@ import lombok.*;
 
 import java.util.List;
 
+/**
+ * DTO class for Order
+ */
 @Data
 @Builder
 @AllArgsConstructor

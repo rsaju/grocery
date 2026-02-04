@@ -14,6 +14,9 @@ import java.util.Collections;
 import java.util.List;
 import java.util.Optional;
 
+/**
+ * Implementation layer of Product service
+ */
 @Service
 @RequiredArgsConstructor
 @Slf4j

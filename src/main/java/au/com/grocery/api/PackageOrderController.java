@@ -13,6 +13,11 @@ import org.springframework.web.bind.annotation.RestController;
 
 import java.util.List;
 
+/**
+ * Package Order Controller class
+ * to place order for the product
+ * by passing in Order details
+ */
 @RestController
 @RequestMapping("/order")
 @RequiredArgsConstructor

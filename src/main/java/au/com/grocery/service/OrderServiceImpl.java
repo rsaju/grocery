@@ -12,6 +12,10 @@ import org.springframework.util.CollectionUtils;
 import java.util.*;
 import java.util.concurrent.atomic.AtomicReference;
 
+/**
+ * This class provides the concrete implementation of the
+ * Order Service where actual business logic is defined
+ */
 @Service
 @AllArgsConstructor
 public class OrderServiceImpl implements OrderService {
@@ -19,6 +23,13 @@ public class OrderServiceImpl implements OrderService {
     private final ProductService productService;
     private final PackageOptionService packageOptionService;
 
+    /**
+     *
+     * @param orderList list of order contains product and quantity details
+     *                 which user wants to place
+     * @return optimized package recommendations
+     * at checkout based on their order quantity
+     */
     @Override
     public List<Order> placeOrder(List<Order> orderList) {
 

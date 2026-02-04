@@ -2,6 +2,9 @@ package au.com.grocery.model;
 
 import lombok.*;
 
+/**
+ * DTO class to show the package breakdown
+ */
 @Data
 @Builder
 @AllArgsConstructor

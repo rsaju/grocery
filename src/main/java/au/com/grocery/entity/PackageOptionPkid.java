@@ -4,6 +4,10 @@ import lombok.*;
 
 import java.io.Serializable;
 
+/**
+ * Class to create composite key
+ * for Package Option
+ */
 @Data
 @AllArgsConstructor
 @NoArgsConstructor

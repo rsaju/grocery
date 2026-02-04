@@ -3,6 +3,9 @@ package au.com.grocery.entity;
 import jakarta.persistence.*;
 import lombok.*;
 
+/**
+ * DAO class for Product
+ */
 @Table(name = "PRODUCT")
 @Entity
 @Builder

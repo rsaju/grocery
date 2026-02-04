@@ -10,6 +10,12 @@ import org.springframework.web.bind.annotation.*;
 
 import java.util.List;
 
+/**
+ * Packaging controller to maintain
+ * packaging options in the system
+ * by passing in package details for
+ * the product
+ */
 @RestController
 @RequestMapping("/packaging-options")
 @RequiredArgsConstructor

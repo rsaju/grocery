@@ -11,6 +11,11 @@ import org.springframework.web.bind.annotation.*;
 import java.util.List;
 import java.util.Optional;
 
+/**
+ * Product controller class
+ * to maintain product and its price
+ * in the system
+ */
 @RestController()
 @RequestMapping(path = "/product")
 @AllArgsConstructor
