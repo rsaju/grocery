@@ -9,6 +9,8 @@ import org.apache.commons.lang3.StringUtils;
 import org.springframework.stereotype.Service;
 import org.springframework.util.CollectionUtils;
 
+import java.math.BigDecimal;
+import java.math.RoundingMode;
 import java.util.*;
 import java.util.concurrent.atomic.AtomicReference;
 
@@ -88,7 +90,9 @@ public class OrderServiceImpl implements OrderService {
                 orders.add(Order.builder()
                         .productCode(order.getProductCode())
                         .quantity(order.getQuantity())
-                        .totalPrice(totalPrice.get())
+                        .totalPrice(BigDecimal.valueOf(totalPrice.get())
+                                .setScale(2, RoundingMode.HALF_UP)
+                                .doubleValue())
                         .packagingBreakdowns(packagingBreakdowns).build());
             }
         }
