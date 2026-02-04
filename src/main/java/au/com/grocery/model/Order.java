@@ -19,7 +19,6 @@ public class Order {
 
     private String productCode;
     private Integer quantity;
-    @JsonFormat(shape = JsonFormat.Shape.STRING, pattern = "0.00")
     private Double totalPrice;
     private List<PackagingBreakdown> packagingBreakdowns;
 }
